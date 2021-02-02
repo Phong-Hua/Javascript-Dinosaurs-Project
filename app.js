@@ -129,6 +129,7 @@ class Dino {
     }
 }
 
+
 // Create Dino Objects
 const dinos = data.map(dino => new DinoBuilder(dino.species)
     .addWeight(dino.weight)
@@ -273,7 +274,7 @@ const dinoTiles = dinos.map(dino => {
 const addTilesToDom = function (humanName, dinoTiles) {
     const tilesBeforeHuman = dinoTiles.slice(0, 4);
     const tilesAfterHuman = dinoTiles.slice(4, 8);
-    const humanTile = `<div>
+    const humanTile = `<div class="grid-item">
         <h3>${humanName}</h3>
         <img src="./images/human.png" alt="human image" />
     </div>`;
