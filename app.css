@@ -35,6 +35,10 @@ p {
     font-weight: 100;
 }
 
+.error {
+    color: red;
+}
+
 /* Grid Styles */
 #grid {
     background: #fff url(images/tracks.png) no-repeat;
